@@ -8,6 +8,7 @@
 <script>
     import axios from 'axios'
     import SlideImage from './components/SlideImage'
+    import $ from 'jquery'
 
     export default {
         name: 'InstagramFeed',
