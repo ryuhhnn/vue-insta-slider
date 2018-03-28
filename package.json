@@ -1,0 +1,30 @@
+{
+  "name": "vue-insta-slider",
+  "version": "0.0.1",
+  "description": "An Instagram slider built in Vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryuhhnn/vue-insta-slider.git"
+  },
+  "keywords": [
+    "vue",
+    "slickjs",
+    "instagram",
+    "slider"
+  ],
+  "author": "Ryan Coleman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryuhhnn/vue-insta-slider/issues"
+  },
+  "homepage": "https://github.com/ryuhhnn/vue-insta-slider#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "slick-carousel": "^1.8.1",
+    "vue": "^2.5.16"
+  }
+}
