@@ -4,11 +4,12 @@
     </div>
 </template>
 
-<script src="slick-carousel/slick/slick.min.js"></script>
 <script>
     import axios from 'axios'
     import SlideImage from './components/SlideImage'
     import $ from 'jquery'
+    import 'slick-carousel/slick/slick.min.js'
+    require('slick-carousel/slick/slick.css')
 
     export default {
         name: 'InstagramFeed',
@@ -36,14 +37,13 @@
             },
             initSlick() {
                 $(document).ready(function() {
-                    let gallery = $('#instagram-feed')
-
-                    gallery.slick({
-                        centerMode: false,
-                        infinite: false,
-                        mobileFirst: false,
+                    $('#instagram-feed').slick({
+                        infinite: true,
                         slidesToShow: 3,
-                        slidesToScroll: 3
+                        slidesToScroll: 3,
+                        variableWidth: true,
+                        adaptiveHeight: true,
+                        arrows: false
                     })
                 })
             }
@@ -51,5 +51,8 @@
     }
 </script>
 
-<style src="slick-carousel/slick/slick-theme.scss"></style>
-<style src="slick-carousel/slick/slick.scss"></style>
+<style scoped>
+    .slick-slide {
+        margin-right: 10px;
+    }
+</style>
