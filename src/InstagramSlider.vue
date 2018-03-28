@@ -4,6 +4,7 @@
     </div>
 </template>
 
+<script src="slick-carousel/slick/slick.min.js"></script>
 <script>
     import axios from 'axios'
     import SlideImage from './components/SlideImage'
@@ -33,16 +34,21 @@
                 })
             },
             initSlick() {
-                let gallery = document.getElementById('instagram-feed')
+                $(document).ready(function() {
+                    let gallery = $('#instagram-feed')
 
-                gallery.slick({
-                    centerMode: false,
-                    infinite: false,
-                    mobileFirst: false,
-                    slidesToShow: 3,
-                    slidesToScroll: 3
+                    gallery.slick({
+                        centerMode: false,
+                        infinite: false,
+                        mobileFirst: false,
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    })
                 })
             }
         }
     }
 </script>
+
+<style src="slick-carousel/slick/slick-theme.scss"></style>
+<style src="slick-carousel/slick/slick.scss"></style>

@@ -1,7 +1,3 @@
-import InstagramFeed from './InstagramFeed.vue'
+import InstagramSlider from './InstagramSlider.vue'
 
-module.exports = {
-    install: function (Vue, options) {
-        Vue.component('instagram-feed', InstagramFeed)
-    }
-}
+export default InstagramSlider
