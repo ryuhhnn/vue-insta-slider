@@ -1,6 +1,6 @@
 {
   "name": "vue-insta-slider",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An Instagram slider built in Vue",
   "main": "src/index.js",
   "scripts": {
